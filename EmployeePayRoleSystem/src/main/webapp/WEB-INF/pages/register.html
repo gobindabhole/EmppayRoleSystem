@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+
+body
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header 
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 2px;
+    text-align: center;
+}
+
+nav ul 
+{
+    list-style-type: none;
+}
+
+nav ul li 
+{
+    display: inline-flex;
+    margin: 0 60px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+form 
+{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend 
+{
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+label 
+{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, text 
+{
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"]
+{
+    width: 80px;
+    padding: 8px 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5vw;
+    cursor: pointer;
+}
+
+input[type="checkbox"] 
+{
+    position: relative;
+    left: 0px;
+    transform:translateX(-50%);
+
+}
+input[type="reset"] 
+{
+
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5vw;
+    cursor: pointer;
+    width:80px
+    
+}
+
+footer 
+{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer nav ul 
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.logo {
+    position: absolute;
+    left: 10px;
+    transform:translateX(450px);
+
+        }
+        .logo img {
+            height: 60px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <span class="logo"><img src="https://img.icons8.com/ios-filled/50/ffffff/money-bag.png" alt="Logo"></span>
+        <h1> PAYROLL SYSTEM</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Form Section -->
+    <main>
+        <section class="form-container">
+            <h2 align="center">Please fill out the form below</h2>
+            <form action="/submit" method="POST">
+                
+                <!-- Personal Information Section -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label for="Admin-name">Admin Name:</label>
+                    <input type="text" id="Admin-name" name="first-name" required><br>
+
+                    <label for="Admin-pass">Admin Password:</label>
+                    <input type="password" id="Admin-pass" name="first-name" required><br>
+
+                    
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required><br>
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required><br>
+                </fieldset>
+
+                <!-- Agreement -->
+                <fieldset>
+                   <input type="checkbox"  name="agree" required>
+                   <label>I agree to the terms and conditions.</label>
+                </fieldset>
+
+                <!-- Submit and Reset Buttons -->
+                <input type="submit" value="submit">
+                <input type="reset" value-"clear">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your GK Pvt Ltd</p>
+        <nav>
+            <ul>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms & Conditions</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
