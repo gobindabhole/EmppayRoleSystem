@@ -23,7 +23,9 @@ public class ImpAdminMagService  {
 	private static final String String = null;
 	@Autowired
 	private IAdminMagService i;
-	
+
+
+
 	public boolean cheakUser(Map<String, Object> map)
 	{
          String uname =(String) map.get("username");
