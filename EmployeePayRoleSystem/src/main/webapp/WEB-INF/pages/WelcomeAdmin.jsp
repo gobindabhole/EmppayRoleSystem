@@ -128,12 +128,12 @@ main {
         <div class="welcome-section">
             <h1>Welcome Admin</h1>
             <div class="buttons">
-                <button class="animated-btn">Add New Employee</button>
-                <button class="animated-btn">Add New Department</button>
-                <button class="animated-btn">Add New Grade</button>
-                <button class="animated-btn">Employee Grade Details</button>
-                <button class="animated-btn">Prepare Monthly Salary</button>
-                <button class="animated-btn">Generate Report</button>
+                <a href="#" class="animated-btn">Add New Employee</a>
+                <a href="#"class="animated-btn">Add New Department</a>
+                <a href="#"class="animated-btn">Add New Grade</a>
+                <a href="#" class="animated-btn">Employee Grade Details</a>
+                <a href="#"class="animated-btn">Prepare Monthly Salary</a>
+                <a href="#" class="animated-btn">Generate Report</a>
             </div>
         </div>
         
