@@ -1,4 +1,4 @@
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="frm" %>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -184,14 +184,12 @@ header {
     <h1>Welcome Admin</h1>
     <h3>Employee Details</h3>
     <div class="form-container">
-   
-    <frm:form action="EmployeeServlet" method="post" enctype="multipart/form-data">
-            
-            <div class="form-row">
+    <form action="EmployeeServlet" method="post">
+
+        <div class="form-row">
             <div style="flex: 1;">
-            
         <label for="Employee_Title">Employee Title:</label>
-        <frm:select id="Employee_Title:" path="Employee_Title:" class="styled-select">
+        <select id="Employee_Title:" name="Employee_Title:" class="styled-select">
             <option value="" disabled selected>Select a title</option>
             <option value="manager">Manager</option>
             <option value="assistant-manager">Assistant Manager</option>
@@ -201,33 +199,33 @@ header {
             <option value="intern">Intern</option>
             <option value="hr-specialist">HR Specialist</option>
             <option value="marketing-executive">Marketing Executive</option>
-        </frm:select>
+        </select>
     </div>
     <div style="flex: 1;">
         <label>Employee Name:</label>
-        <frm:input type="text" path="employeeName" required /><br>
+        <input type="text" name="employeeName" required /><br>
 </div>
 </div>
 <div class="form-row">
     <div style="flex: 1;">
         <label>Date of Birth:</label>
-        <frm:input type="date" path="dob" required />
+        <input type="date" name="dob" required />
     </div>
     <div style="flex: 1;">
 
         <label>Date of Joining:</label>
-        <frm:input type="date" path="doj" required /><br/>
+        <input type="date" name="doj" required /><br/>
 </div>
 </div>
         <div class="form-row">
             <div style="flex: 1;">
         <label>Address:</label>
-        <frm:input type="text" path="address" required />
+        <input type="text" name="address" required />
     </div>
     <div style="flex: 1;">
 
         <label for="state">State:</label>
-        <frm:select id="state" path="state" class="styled-select">
+        <select id="state" name="state" class="styled-select">
             <option value="" disabled selected>Select</option>
             <option value="Andhra_Pradesh">Andhra Pradesh</option>
             <option value="Arunachal_Pradesh">Arunachal Pradesh</option>
@@ -257,45 +255,44 @@ header {
             <option value="uttar-pradesh">Uttar Pradesh</option>
             <option value="uttarakhand">Uttarakhand</option>
             <option value="west-bengal">West Bengal</option>
-        </frm:select><br>
+        </select><br>
 </div>
 </div>
         <div class="form-row">
             <div style="flex: 1;">
         <label>City:</label>
-        <frm:input type="text" path="city" required />
+        <input type="text" name="city" required />
     </div>
     <div style="flex: 1;">
 
         <label> PinCode:</label>
-        <frm:input type="number" path="pincode" required /><br/>
+        <input type="number" name="pincode" required /><br/>
 </div>
 </div>
         <div class="form-row">
             <div style="flex: 1;">
         <label>Mobile No:</label>
-        <frm:input type="number" path="mobile" required />
+        <input type="number" name="mobile" required />
     </div>
     <div style="flex: 1;">
 
         <label>Email ID:</label>
-        <frm:input type="email" path="email" required /><br/>
+        <input type="email" name="email" required /><br/>
 </div>
 </div>
         <div class="form-row">
             <div style="flex: 1;">
         <label>PAN Card No:</label>
-        <frm:input type="text" path="pancard" required />
+        <input type="text" name="pancard" required />
     </div>
     <div style="flex: 1;">
         <label>Upload PAN Card Image:</label>
-        <frm:input type="file" path="pan"/><br/><br/>
+        <input type="file" name="pan" /><br/><br/>
 </div>
 </div>
         <button type="submit">Submit</button>
         <button type="reset">Clear</button>
-    
-    </frm:form>
+    </form>
     </div>
 </body>
 </html>
