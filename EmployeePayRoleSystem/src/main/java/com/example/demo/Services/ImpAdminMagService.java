@@ -30,9 +30,9 @@ public class ImpAdminMagService  {
 	{
          String uname =(String) map.get("username");
          String pass =(String) map.get("pass");
-         System.out.println(uname+ pass);
+//         System.out.println(uname+ pass);
         Admin admin = i.getAdmin(uname, pass);
-        System.out.println(admin);
+//        System.out.println(admin);
         if(admin!=null)
         {
         	return true;

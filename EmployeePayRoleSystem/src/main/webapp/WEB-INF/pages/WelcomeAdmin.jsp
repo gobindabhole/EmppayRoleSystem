@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@taglib prefix="c" uri= "http://www.springframework.org/tags"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,6 +79,7 @@ main {
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
     animation: fadeInUp 2s ease-out;
+    text-decoration:none;
 }
 
 .animated-btn:hover {
@@ -126,9 +128,10 @@ main {
     </header>
     <main>
         <div class="welcome-section">
-            <h1>Welcome Admin</h1>
+            <h1>Welcome ${username}</h1>
             <div class="buttons">
-                <a href="#" class="animated-btn">Add New Employee</a>
+           <%--  <link href="<c:url value="/css/common.css"/>" rel="stylesheet" type="text/css"> --%>
+                <a href="<c:url value="/addemp"/>" class="animated-btn">Add New Employee</a>
                 <a href="#"class="animated-btn">Add New Department</a>
                 <a href="#"class="animated-btn">Add New Grade</a>
                 <a href="#" class="animated-btn">Employee Grade Details</a>
