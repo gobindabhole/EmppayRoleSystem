@@ -1,7 +1,7 @@
 package com.example.demo.Services;
 
 
-import java.util.Map;
+import java.util.Map; 
 
 //import java.util.Optional;
 //import java.util.function.Function;
@@ -18,14 +18,18 @@ import com.example.demo.entitys.Employee;
 //import org.springframework.data.repository.query.FluentQuery.FetchableFluentQuery;
 //
 //import com.example.demo.entitys.Admin;
+import com.example.demo.entitys.Grade;
 @Service
-public class ImpAdminMagService  {
+public class ImpAdminMagService 
+{
 
 	private static final String String = null;
 	@Autowired
 	private IAdminMagService i;
 	@Autowired
 	private IEmpMagService ii;
+	@Autowired
+	private IGradeMgmtService iii;
 
 
 
@@ -61,6 +65,16 @@ public class ImpAdminMagService  {
 			  return null;
 		  }
 
+	}
+	
+	public Grade gradeRegister(Grade gr)
+	{
+	    Grade grade = iii.save(gr);
+	    System.out.println(grade);
+		if(grade!=null)
+			return grade;
+		else
+			return null;
 	}
 
 }
