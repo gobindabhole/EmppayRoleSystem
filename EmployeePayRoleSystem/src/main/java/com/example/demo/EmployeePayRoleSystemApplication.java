@@ -9,6 +9,7 @@ public class EmployeePayRoleSystemApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(EmployeePayRoleSystemApplication.class, args);
 	}
+	
 //gobind
 	//hyyhygyyvyvyvygyvyv
 }
