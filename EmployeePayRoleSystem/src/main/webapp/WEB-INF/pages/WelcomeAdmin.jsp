@@ -132,7 +132,7 @@ main {
             <div class="buttons">
            <%--  <link href="<c:url value="/css/common.css"/>" rel="stylesheet" type="text/css"> --%>
                 <a href="<c:url value="/addemp"/>" class="animated-btn">Add New Employee</a>
-                <a href="#"class="animated-btn">Add New Department</a>
+                <a href="<c:url value="/adddept"/>"class="animated-btn">Add New Department</a>
                 <a href="<c:url value="/addgrade"/>"class="animated-btn">Add New Grade</a>
                 <a href="#" class="animated-btn">Employee Grade Details</a>
                 <a href="#"class="animated-btn">Prepare Monthly Salary</a>

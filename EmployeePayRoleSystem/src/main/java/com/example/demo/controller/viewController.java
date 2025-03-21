@@ -29,8 +29,6 @@ public class viewController {
 	
 	String nameofAdmin;
 	
-	
-	
 	@GetMapping("/")
 	public String viewhomePage(@ModelAttribute("Adminch") LoginChk lg)
 	{
@@ -134,6 +132,13 @@ public class viewController {
   		  return "gradesuccess";
   		  else
   			  return "gradesystem";
+  	  }
+  	  
+  	  @GetMapping("/adddept")
+  	  public String adddept(Map<String,Object> map)
+  	  {
+  		  return "";
+  		  
   	  }
 }
 
